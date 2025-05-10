@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Audio Adjuster",
+    "version": "1.0",
+    "description": "Mute or amplify tab audio up to 500%",
+    "permissions": ["tabs", "activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_title": "Audio Adjuster"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

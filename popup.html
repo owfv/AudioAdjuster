@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; width: 200px; padding: 10px; }
+    input[type="range"] { width: 100%; }
+    button { width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <label for="volumeSlider">Volume (<span id="volumeValue">100%</span>)</label>
+  <input type="range" id="volumeSlider" min="0" max="500" value="100">
+  <button id="muteButton">Toggle Mute</button>
+  <script src="popup.js"></script>
+</body>
+</html>
